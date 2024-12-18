@@ -15,7 +15,7 @@
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
 			<Id>1734450433279</Id>
-			<Name><![CDATA[Main]]></Name>
+			<Name><![CDATA[ЛогистикаВнешняя]]></Name>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1734450433286</Id>
@@ -185,12 +185,12 @@
 					<PresentationId>1734451780763</PresentationId>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Airport]]></ClassName>
+						<ClassName><![CDATA[Бурение]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
 							<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-							<ClassName><![CDATA[Airport]]></ClassName>
+							<ClassName><![CDATA[Бурение]]></ClassName>
 							<ItemName><![CDATA[1734451780665]]></ItemName>
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
@@ -248,12 +248,12 @@
 					<PresentationId>1734453668708</PresentationId>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
 							<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-							<ClassName><![CDATA[Manufacturing]]></ClassName>
+							<ClassName><![CDATA[Производство]]></ClassName>
 							<ItemName><![CDATA[1734453668629]]></ItemName>
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
@@ -311,12 +311,12 @@
 					<PresentationId>1734461286027</PresentationId>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Truck]]></ClassName>
+						<ClassName><![CDATA[ГрузовикМежГородской]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
 							<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-							<ClassName><![CDATA[Truck]]></ClassName>
+							<ClassName><![CDATA[ГрузовикМежГородской]]></ClassName>
 							<ItemName><![CDATA[1734461286000]]></ItemName>
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
@@ -30451,7 +30451,7 @@
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
 			<Id>1734451780659</Id>
-			<Name><![CDATA[Airport]]></Name>
+			<Name><![CDATA[Бурение]]></Name>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1734451780665</Id>
@@ -30565,8 +30565,8 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
-						<EntryAction><![CDATA[Order order = new Order( this );
-send( order, main.manufacturing);]]></EntryAction>
+						<EntryAction><![CDATA[ЗаказНаСервис заказНаСервис = new ЗаказНаСервис( this );
+send( заказНаСервис, get_ЛогистикаВнешняя().manufacturing);]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -30661,7 +30661,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<MessageType><![CDATA[Object]]></MessageType>
 					<StatechartReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Airport]]></ClassName>
+						<ClassName><![CDATA[Бурение]]></ClassName>
 						<ItemName><![CDATA[statechart]]></ItemName>
 					</StatechartReference>
 					<LineStyle>SOLID</LineStyle>
@@ -30676,7 +30676,7 @@ send( order, main.manufacturing);]]></EntryAction>
 			<ContainerLinks>
 				<ContainerLink>
 					<Id>1734451780865</Id>
-					<Name><![CDATA[main]]></Name>
+					<Name><![CDATA[логистикаВнешняя]]></Name>
 					<X>50</X><Y>-100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -30684,7 +30684,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
+						<ClassName><![CDATA[ЛогистикаВнешняя]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
 			</ContainerLinks>
@@ -30943,7 +30943,7 @@ send( order, main.manufacturing);]]></EntryAction>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
 			<Id>1734453668623</Id>
-			<Name><![CDATA[Manufacturing]]></Name>
+			<Name><![CDATA[Производство]]></Name>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1734453668629</Id>
@@ -31046,7 +31046,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[seize]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -31056,7 +31056,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[enter]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -31079,7 +31079,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[packing]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -31089,7 +31089,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[resourceTaskStart]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -31112,7 +31112,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[toAirport]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -31122,7 +31122,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[seize]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -31146,7 +31146,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[toAirport]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -31156,7 +31156,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[packing]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -31179,7 +31179,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[unpacking]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -31189,7 +31189,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[seize]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -31212,7 +31212,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[release]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -31222,7 +31222,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[unpacking]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -31245,7 +31245,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[sink]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -31255,7 +31255,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[release]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -31278,7 +31278,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[moveTo]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -31288,7 +31288,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[release]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -31311,7 +31311,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[resourceTaskEnd]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -31321,7 +31321,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Manufacturing]]></ClassName>
+						<ClassName><![CDATA[Производство]]></ClassName>
 						<ItemName><![CDATA[moveTo]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -31348,7 +31348,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<HandleReceiveInConnections>false</HandleReceiveInConnections>
 					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
 					<AgentLinkBidirectional>true</AgentLinkBidirectional>
-					<MessageType><![CDATA[Order]]></MessageType>
+					<MessageType><![CDATA[ЗаказНаСервис]]></MessageType>
 					<LineStyle>SOLID</LineStyle>
 					<LineWidth>1</LineWidth>
 					<LineColor>-16777216</LineColor>
@@ -31361,7 +31361,7 @@ send( order, main.manufacturing);]]></EntryAction>
 			<ContainerLinks>
 				<ContainerLink>
 					<Id>1734453668843</Id>
-					<Name><![CDATA[main]]></Name>
+					<Name><![CDATA[логистикаВнешняя]]></Name>
 					<X>50</X><Y>-100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -31369,7 +31369,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
+						<ClassName><![CDATA[ЛогистикаВнешняя]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
 			</ContainerLinks>
@@ -31403,7 +31403,7 @@ send( order, main.manufacturing);]]></EntryAction>
 						<Parameter>
 							<Name><![CDATA[capacity]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[get_Main().numberTrucks]]></Code>
+								<Code><![CDATA[get_ЛогистикаВнешняя().numberTrucks]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -31612,7 +31612,7 @@ send( order, main.manufacturing);]]></EntryAction>
 						<Parameter>
 							<Name><![CDATA[population]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[get_Main().trucks]]></Code>
+								<Code><![CDATA[get_ЛогистикаВнешняя().trucks]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -31716,7 +31716,7 @@ send( order, main.manufacturing);]]></EntryAction>
 							<ItemName><![CDATA[1412336242933]]></ItemName>
 						</GenericParameterSubstituteReference>
 						<GenericParameterSubstituteValue Class="CodeValue">
-							<Code><![CDATA[Order]]></Code>
+							<Code><![CDATA[ЗаказНаСервис]]></Code>
 						</GenericParameterSubstituteValue>
 					</GenericParameterSubstitute>
 					<Parameters>
@@ -31980,7 +31980,7 @@ send( order, main.manufacturing);]]></EntryAction>
 						<Parameter>
 							<Name><![CDATA[onSeizeUnit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[((Truck)unit).client = agent.customer;]]></Code>
+								<Code><![CDATA[((ГрузовикМежГородской)unit).client = agent.customer;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -32066,7 +32066,7 @@ send( order, main.manufacturing);]]></EntryAction>
 							<ItemName><![CDATA[1412336243161]]></ItemName>
 						</GenericParameterSubstituteReference>
 						<GenericParameterSubstituteValue Class="CodeValue">
-							<Code><![CDATA[Truck]]></Code>
+							<Code><![CDATA[ГрузовикМежГородской]]></Code>
 						</GenericParameterSubstituteValue>
 					</GenericParameterSubstitute>
 					<Parameters>
@@ -32680,7 +32680,7 @@ send( order, main.manufacturing);]]></EntryAction>
 							<ItemName><![CDATA[1412336243157]]></ItemName>
 						</GenericParameterSubstituteReference>
 						<GenericParameterSubstituteValue Class="CodeValue">
-							<Code><![CDATA[Truck]]></Code>
+							<Code><![CDATA[ГрузовикМежГородской]]></Code>
 						</GenericParameterSubstituteValue>
 					</GenericParameterSubstitute>
 					<Parameters>
@@ -32705,7 +32705,7 @@ send( order, main.manufacturing);]]></EntryAction>
 						<Parameter>
 							<Name><![CDATA[destinationAgent]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[get_Main().manufacturing]]></Code>
+								<Code><![CDATA[get_ЛогистикаВнешняя().manufacturing]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -33353,7 +33353,7 @@ send( order, main.manufacturing);]]></EntryAction>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
 			<Id>1734461285994</Id>
-			<Name><![CDATA[Truck]]></Name>
+			<Name><![CDATA[ГрузовикМежГородской]]></Name>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1734461286000</Id>
@@ -33455,7 +33455,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[Airport]]></Type>
+						<Type><![CDATA[Бурение]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<ParameterEditor>
@@ -33493,7 +33493,7 @@ send( order, main.manufacturing);]]></EntryAction>
 			<ContainerLinks>
 				<ContainerLink>
 					<Id>1734461286124</Id>
-					<Name><![CDATA[main]]></Name>
+					<Name><![CDATA[логистикаВнешняя]]></Name>
 					<X>50</X><Y>-100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -33501,7 +33501,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[боевлогистиказапчастей]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
+						<ClassName><![CDATA[ЛогистикаВнешняя]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
 			</ContainerLinks>
@@ -33810,7 +33810,7 @@ send( order, main.manufacturing);]]></EntryAction>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
 			<Id>1734461643479</Id>
-			<Name><![CDATA[Order]]></Name>
+			<Name><![CDATA[ЗаказНаСервис]]></Name>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1734461643485</Id>
@@ -33912,7 +33912,7 @@ send( order, main.manufacturing);]]></EntryAction>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[Airport]]></Type>
+						<Type><![CDATA[Бурение]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<ParameterEditor>
